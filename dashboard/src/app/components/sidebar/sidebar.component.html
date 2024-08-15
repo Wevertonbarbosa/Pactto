@@ -1,5 +1,5 @@
 <div class="d-flex flex-column flex-shrink-0 p-3  divMainSide">
-  <a href="/" class="d-flex align-items-center justify-content-center text-decoration-none">
+  <a routerLink="/home" class="d-flex align-items-center justify-content-center text-decoration-none">
     <img src="https://app.pactto.com/assets/images/pactto-logo.svg" alt="logo" class="logo">
   </a>
   <hr>
@@ -8,61 +8,61 @@
     <ul class="nav nav-pills flex-column mb-3 d-flex">
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/home" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover" aria-current="page">
+          class="nav-link fs-4 py-1 linkHover" aria-current="page">
           <i class="lni lni-home"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/chats" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-wechat"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/review" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-indent-decrease"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/links" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-link"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/information" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-pencil-alt"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/packages" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-briefcase-alt"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/users" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-users"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/library" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-video"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/subscription" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-handshake"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
         <a routerLink="/settings" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link fs-5 py-1 linkHover">
+          class="nav-link fs-4 py-1 linkHover">
           <i class="lni lni-cog"></i>
         </a>
       </li>
@@ -73,19 +73,17 @@
       <span class="d-flex justify-content-center">
         <img src="https://app.pactto.com/assets/images/avatar-placeholder.png" alt="user" class="w-75 rounded">
       </span>
-      <p class="text-white m-0 text-center">Usuário</p>
+      <p class="text-white m-0 text-center textBody sizeUserText">Usuário</p>
       <div class="plano rounded-pill">
-        <p class="text-white planoEscolhido text-center">PRO</p>
+        <p class="text-white planoEscolhido text-center textBody mb-2">PRO</p>
       </div>
-
-
 
     </div>
     <hr>
     <div class="container-fluid p-0 d-flex justify-content-center align-items-center">
 
-      <button class="btn p-2 justify-content-center align-items-center rounded-pill" type="button">
-        <a href="#" class="nav-link p-0 logout">
+      <button class="btn justify-content-center align-items-center rounded-pill" type="button">
+        <a href="#" class="nav-link p-0 textButtonCtas" id="colorLogout">
           <p class="mb-1">Logout</p>
         </a>
       </button>
