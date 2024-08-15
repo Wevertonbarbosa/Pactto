@@ -4,60 +4,71 @@
   </a>
   <hr>
 
-  <div class="">
-    <ul class="nav nav-pills flex-column mb-3 d-flex ">
+  <div>
+    <ul class="nav nav-pills flex-column mb-3 d-flex">
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/home" class="nav-link active fs-5 py-1" aria-current="page">
+        <a routerLink="/home" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover" aria-current="page">
           <i class="lni lni-home"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/chats" class="nav-link fs-4 py-1">
+        <a routerLink="/chats" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-wechat"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/review" class="nav-link fs-5 py-1">
+        <a routerLink="/review" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-indent-decrease"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/links" class="nav-link fs-5 py-1">
+        <a routerLink="/links" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-link"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/information" class="nav-link fs-5 py-1">
+        <a routerLink="/information" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-pencil-alt"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/packages" class="nav-link fs-5 py-1">
+        <a routerLink="/packages" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-briefcase-alt"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/users" class="nav-link fs-5 py-1">
+        <a routerLink="/users" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-users"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/library" class="nav-link fs-5 py-1">
+        <a routerLink="/library" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-video"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/subscription" class="nav-link fs-5 py-1">
+        <a routerLink="/subscription" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-handshake"></i>
         </a>
       </li>
       <li class="nav-item d-flex justify-content-center">
-        <a routerLink="/settings" class="nav-link fs-5 py-1">
+        <a routerLink="/settings" routerLinkActive="linksActive" [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link fs-5 py-1 linkHover">
           <i class="lni lni-cog"></i>
         </a>
       </li>
     </ul>
     <hr>
+    
     <div class="container-fluid p-0">
       <span class="d-flex justify-content-center">
         <img src="https://app.pactto.com/assets/images/avatar-placeholder.png" alt="user" class="w-75 rounded">

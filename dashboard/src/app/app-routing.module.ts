@@ -12,48 +12,18 @@ import { SubscriptionComponent } from './pages/subscription/subscription.compone
 import { SettingsComponent } from './pages/settings/settings.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'chats',
-    component: ChatsComponent,
-  },
-  {
-    path: 'review',
-    component: ReviewComponent,
-  },
-  {
-    path: 'links',
-    component: LinksComponent,
-  },
-  {
-    path: 'information',
-    component: InformationComponent,
-  },
-  {
-    path: 'packages',
-    component: PackagesComponent,
-  },
-  {
-    path: 'users',
-    component: UsersComponent,
-  },
-  {
-    path: 'library',
-    component: LibraryComponent,
-  },
-  {
-    path: 'subscription',
-    component: SubscriptionComponent,
-  },
-  {
-    path: 'settings',
-    component: SettingsComponent,
-  },
- 
-
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'chats', component: ChatsComponent },
+  { path: 'review', component: ReviewComponent },
+  { path: 'links', component: LinksComponent },
+  { path: 'information', component: InformationComponent },
+  { path: 'packages', component: PackagesComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'library', component: LibraryComponent },
+  { path: 'subscription', component: SubscriptionComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: '**', redirectTo: '/home' } 
 ];
 
 @NgModule({

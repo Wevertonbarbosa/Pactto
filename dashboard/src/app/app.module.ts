@@ -14,6 +14,9 @@ import { UsersComponent } from './pages/users/users.component';
 import { LibraryComponent } from './pages/library/library.component';
 import { SubscriptionComponent } from './pages/subscription/subscription.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { InputHomeComponent } from './components/input-home/input-home.component';
+import { InputStyleComponent } from './components/input-style/input-style.component';
+import { ModelPagesComponent } from './components/model-pages/model-pages.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { SettingsComponent } from './pages/settings/settings.component';
     UsersComponent,
     LibraryComponent,
     SubscriptionComponent,
-    SettingsComponent
+    SettingsComponent,
+    InputHomeComponent,
+    InputStyleComponent,
+    ModelPagesComponent
   ],
   imports: [
     BrowserModule,
